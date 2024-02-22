@@ -1,6 +1,6 @@
 # Product Website Template
 
-The [Product Website Template](https://github.com/ConductionNL/product-website-template) by [Conduction](https://www.conduction.nl/) is a powerful tool designed to alleviate the common issue faced by many open source and Common Ground projects: the need for a dedicated product page and the cost (in time) to build one. This template enables users to quickly and easily set up a product page based on the contents of their repository without actually making a page.
+The [Product Website Template](https://github.com/OpenCatalogi/product-website-template) by [Conduction](https://www.conduction.nl/) is a powerful tool designed to alleviate the common issue faced by many open source and Common Ground projects: the need for a dedicated product page and the cost (in time) to build one. This template enables users to quickly and easily set up a product page based on the contents of their repository without actually making a page.
 
 The template is highly customizable, allowing users to style their product page using their organization's NL design token. This template maintains a consistent look and feel across all your products and services, reinforcing your brand identity.
 
@@ -21,7 +21,7 @@ All in all, it's a simple, quick, fire-and-forget solution for providing a simpl
 ## Using this template for your own GitHub repository
 
 1. **Download the GitHub Workflow File**
-   Download the [product page workflow file ](https://github.com/ConductionNL/product-website-template/blob/main/.github/workflows/product-page-deploy.yml) on GitHub. Download the file to your local machine. You can refer to the [GitHub Actions documentation](https://docs.github.com/en/actions) for more information on GitHub workflows.
+   Download the [product page workflow file ](https://github.com/OpenCatalogi/product-website-template/blob/main/.github/workflows/product-page-deploy.yml) on GitHub. Download the file to your local machine. You can refer to the [GitHub Actions documentation](https://docs.github.com/en/actions) for more information on GitHub workflows.
 
 2. **Place the Workflow File in Your Repository**
 
@@ -103,12 +103,12 @@ jobs:
           read_the_docs_url: "false"
 
           # Navbar
-          navbar_content: "https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"
+          navbar_content: "https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"
 
           # Footer
           footer_show_logo: "true"
           footer_logo_href: https://conduction.nl
-          footer_content: "https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"
+          footer_content: "https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"
           footer_content_header: "heading-3"
 
           # Jumbotron
@@ -137,10 +137,10 @@ We currently support the following configurations option's
 | `pull_from_branche`                | `"development"`                                                                                                                                                | The branche on witch to base the build e.g. main or development.                                                            |
 | `slack_url`                        | `"false"`                                                                                                                                                      | The URL for your Slack workspace. (set to `"false"` to omit Slack from your menu).                                          |
 | `read_the_docs_url`                | `"false"`                                                                                                                                                      | The URL for your Read the Docs documentation. (set to `"false"` to omit documentation from your menu).                      |
-| `navbar_content`                   | `"https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"`                     | A link to the json file that manages the navbar content.                                                                    |
+| `navbar_content`                   | `"https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"`                     | A link to the json file that manages the navbar content.                                                                    |
 | `footer_show_logo`                 | `"true"`                                                                                                                                                       | Whether to show to logo in the footer or not.                                                                         |
 | `footer_logo_href`                 | `"https://conduction.nl"`                                                                                                                                      | The URL that the footer image will link to (set to blank to not link).                                                    |
-| `footer_content`                   | `"https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"`                     | A link to the json file that manages the footer content.                                                                 |
+| `footer_content`                   | `"https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"`                     | A link to the json file that manages the footer content.                                                                 |
 | `footer_content_header`            | `"heading-3"`                                                                                                                                                  | The heading size used in the footer ("heading-1" to "heading-5").                                                        |
 | `jumbotron_title`                  | `"Product Website Template"`                                                                                                                                   | The title on your jumbotron.                                                                                                |
 | `jumbotron_subtitle`               | `${{ github.event.repository.url }}`                                                                                                                           | The subtitle on your jumbotron.                                                                                             |

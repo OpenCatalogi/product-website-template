@@ -56,7 +56,7 @@ Dynamic footer items can be passed to the json file like this:
       {
         "ariaLabel": "Github",
         "value": "Github",
-        "link": "https://github.com/ConductionNL/product-website-template",
+        "link": "https://github.com/OpenCatalogi/product-website-template",
         "icon": { "prefix": "fab", "icon": "github", "placement": "left" }
       },
       {
