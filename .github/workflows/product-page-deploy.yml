@@ -19,8 +19,8 @@ jobs:
           # Connect Repository
           github_repository_name_as_prefix: true
           github_repository_name: ${{ github.event.repository.name }}
-          github_repository_url: https://github.com/ConductionNL/product-website-template
-          github_api_base_url: https://api.github.com/repos/ConductionNL/product-website-template/contents
+          github_repository_url: https://github.com/OpenCatalogi/product-website-template
+          github_api_base_url: https://api.github.com/repos/OpenCatalogi/product-website-template/contents
           github_docs_directory_paths: '[{"name": "Features", "location": "/docs/features"}, {"name": "Roadmap", "location": "/docs/roadmap"}, {"name": "Usecases", "location": "/docs/usecases"}]'
           pull_from_branche: "development"
 
@@ -29,12 +29,12 @@ jobs:
           read_the_docs_url: "false"
 
           # Navbar
-          navbar_content: "https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"
+          navbar_content: "https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/header/HeaderContent.json"
 
           # Footer
           footer_show_logo: "true"
           footer_logo_href: https://conduction.nl
-          footer_content: "https://raw.githubusercontent.com/ConductionNL/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"
+          footer_content: "https://raw.githubusercontent.com/OpenCatalogi/product-website-template/main/pwa/src/templates/templateParts/footer/FooterContent.json"
           footer_content_header: "heading-3"
 
           # Jumbotron
