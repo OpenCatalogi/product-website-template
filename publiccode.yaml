@@ -5,7 +5,7 @@ url: https://github.com/OpenCatalogi/product-website-template
 landingURL: https://github.com/OpenCatalogi/product-website-template
 isBasedOn: null
 softwareVersion: null
-logo: "https://raw.githubusercontent.com/OpenCatalogi/web-app/development/pwa/src/assets/images/logo_OpenCatalogi.png"
+logo: https://raw.githubusercontent.com/OpenCatalogi/web-app/development/pwa/src/assets/images/logo_OpenCatalogi.png
 monochromeLogo: null
 platforms:
   - web
