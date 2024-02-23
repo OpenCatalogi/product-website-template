@@ -71,15 +71,16 @@ localisation:
     - nl
 nl:
   countryExtensionVersion: null
-  commonground:
-    intendedOrganisations: []
-    installationType: null
-    layerType: interface
-  gemma:
-    bedrijfsfuncties: []
-    bedrijfsservices: []
-    applicatiefunctie: null
-    model: null
+  vng:
+    commonground:
+      intendedOrganisations: []
+      installationType: null
+      layerType: interface
+    gemma:
+      bedrijfsfuncties: []
+      bedrijfsservices: []
+      applicatiefunctie: null
+      model: null
   upl: []
 roadmap: null
 dependsOn: null
