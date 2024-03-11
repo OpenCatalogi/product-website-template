@@ -74,7 +74,7 @@ nl:
   vng:
     commonground:
       intendedOrganisations: []
-      installationType: null
+      installationType: self
       layerType: interface
     gemma:
       bedrijfsfuncties: []
