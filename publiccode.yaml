@@ -13,7 +13,7 @@ releaseDate: 2023-11-10
 categories:
   - collaboration
   - it-development
-developmentStatus: beta
+developmentStatus: stable
 softwareType: softwareAddon
 description:
   en:
@@ -71,17 +71,16 @@ localisation:
     - nl
 nl:
   countryExtensionVersion: null
-  vng:
-    commonground:
-      intendedOrganisations: []
-      installationType: null
-      layerType: interface
-    gemma:
-      bedrijfsfuncties: []
-      bedrijfsservices: []
-      applicatiefunctie: null
-      model: null
-    upl: []
+  commonground:
+    intendedOrganisations: []
+    installationType: self
+    layerType: interface
+  gemma:
+    bedrijfsfuncties: []
+    bedrijfsservices: []
+    applicatiefunctie: null
+    model: null
+  upl: []
 roadmap: null
 dependsOn: null
 inputTypes: null
