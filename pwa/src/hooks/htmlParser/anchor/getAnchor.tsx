@@ -14,7 +14,7 @@ export const getAnchor = (
   const handleClick = (e: any) => {
     e.preventDefault();
 
-    const targetFile = _.upperFirst(props.href.substring(props.href.lastIndexOf("/") + 1).replace(".md", ""));
+    const targetFile = props.href.substring(props.href.lastIndexOf("/") + 1).replace(".md", "");
 
     // No link
     if (!props.href) {
