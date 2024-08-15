@@ -10,7 +10,7 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { PageHeader } from "@utrecht/component-library-react";
 import { THeaderTopNavItem, useHeaderTopNavItems } from "../../../hooks/useHeaderTopNavItems";
 import { faGithub, faSlack } from "@fortawesome/free-brands-svg-icons";
-import { faReadTheDocs } from "../../../assets/customIcons";
+import { faReadTheDocs, faRedocly } from "../../../assets/customIcons";
 import { Breadcrumbs } from "../../../components/breadcrumbs/Breadcrumbs";
 
 interface HeaderTemplateProps {
@@ -62,6 +62,19 @@ export const HeaderTemplate: React.FC<HeaderTemplateProps> = ({ layoutClassName 
           link: process.env.GATSBY_GITHUB_REPOSITORY_URL ?? "",
         },
         icon: <FontAwesomeIcon icon={faGithub} />,
+      });
+
+    process.env.GATSBY_REDOCLY_URL !== "false" &&
+      optionalNavItemsArray.push({
+        label: t("Redocly"),
+        type: "external",
+        current: {
+          pathname: "/redocly",
+        },
+        handleClick: {
+          link: process.env.GATSBY_REDOCLY_URL ?? "",
+        },
+        icon: <FontAwesomeIcon icon={faRedocly as IconDefinition} />,
       });
 
     setOptionalNavItems(optionalNavItemsArray);
